@@ -1,10 +1,10 @@
 import "./Styles.css";
 
-function FruitList(props) {
+function FruitList({ parameter }) {
   return (
     <>
       <ul className="lista-ul">
-        {props.parameter.map((item) => (
+        {parameter.map((item) => (
           <li>{item.name}</li>
         ))}
       </ul>
